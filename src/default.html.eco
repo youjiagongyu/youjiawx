@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= @document.title %></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+<div class="container">
+<div class="wrapper">
+	<div class="row top">
+		<h1><%= @document.title %></h1>
+	</div>
+    
+	<div class="row content">
+		<%- @content %>
+	</div>
+	
+	<div class="row footer"></div>
+</div>
+<footer>Built with LOVE.</footer>
+</div>
+
+</body>
+</html>
