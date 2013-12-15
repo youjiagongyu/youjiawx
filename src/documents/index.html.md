@@ -10,3 +10,5 @@ published: true
 789
 
 test codeship
+
+test deply & regenerate
