@@ -5,3 +5,6 @@ isPage: true
 published: true
 ---
 
+hello
+
+![xxxxx](/images/1.jpg)
