@@ -13,6 +13,12 @@ docpadConfig = {
 				"/scripts/script.js"
 			]
 		getTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+	
+	collections:
+		pages: -> @getCollection("documents").findAllLive({isPage:true})
+		rooms: -> @getCollection("documents").findAllLive({isRoom:true})
+		events: -> @getCollection("documents").findAllLive({isEvent:true})
+		entertainments: -> @getCollection("documents").findAllLive({isEntertainment:true})
 		
 	# DocPad Events
 	events:
