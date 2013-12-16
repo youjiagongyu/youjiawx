@@ -1,0 +1,24 @@
+--- cson
+title: "我的周围"
+layout: "default"
+isPage: true
+scripts: [
+		"/vendor/js/av.min.js"
+		"/scripts/local.js"
+	]
+---
+<div class="app-content"></div>
+<script type="text/template" id="list-template">		
+<ul id="merchant-list">
+  <img src='images/spinner.gif' class='spinner' />
+</ul>
+</script>
+
+<script type="text/template" id="item-template">
+<li class="merchant">
+	<h4><%= name %></h3>
+	<p><%= phone %></p>
+	<p><%= address %></p>
+	<p><%= note %></p>
+</li>
+</script>
