@@ -1,0 +1,14 @@
+---
+title: "YOU+活动"
+layout: "default"
+isPage: true
+---
+<div class="menu">
+	<ul>
+	<% for event in @getCollection("events").toJSON(): %>	
+	<li>
+		<a href="<%= event.url %>" ontouchstart=""><span class="event-date"><%= (event.name.split '.')[0] %></span><%= event.title %></a>
+	</li>
+	<% end %>
+	</ul>
+</div>
