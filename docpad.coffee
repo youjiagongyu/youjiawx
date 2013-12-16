@@ -2,6 +2,18 @@ docpadConfig = {
 	templateData:
 		site:
 			title: "You+国际青年公寓"
+			styles: [
+				"/vendor/css/bootstrap.css"
+				"/styles/style.css"
+			]
+			scripts: [
+				"/vendor/js/jquery.min.js"
+				"/vendor/js/bootstrap.min.js"
+				"/vendor/js/underscore.min.js"
+				"/scripts/script.js"
+			]
+		getTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+		
 	# DocPad Events
 	events:
 
